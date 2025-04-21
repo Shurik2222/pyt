@@ -1,0 +1,20 @@
+temperature = int(input("введите температуру воздуха: "))
+if temperature > 20:
+    is_rainy = input("есть осадки? (да/нет): ")
+    if is_rainy.lower() == "да":
+        print("наденьте футболку, шорты и дождевик")
+    else:
+        print("наденьте футболку и шорты")
+else:
+    if temperature < 0:
+        print("наденьте пуховик")
+    else:
+        is_rainy1 = input("есть осадки? (да/нет): ")
+        if is_rainy1.lower() == "да":
+            raining_heavily = input("осадки сильные? (да/нет): ")
+            if raining_heavily.lower() == "да":
+                print("наденьте пальто, резиновые сапоги и зонт")
+            else:
+                print("наденьте пальто и дождевик")
+        else:
+            print("наденьте пальто")
